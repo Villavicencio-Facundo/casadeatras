@@ -1,0 +1,16 @@
+.contenedor-menu{
+    width: 100%;
+    .menu-colorfondo{
+        background-color: $color-oscuro;
+    }
+    .nav-item a{
+        font-family: $font-principal;
+        color: $color-fondo1;
+        font-size: 20px;
+    }
+    .lacasa{
+        font-family: $font-principal;
+        font-size: 25px;
+        color: $color-clarito;
+    }
+}

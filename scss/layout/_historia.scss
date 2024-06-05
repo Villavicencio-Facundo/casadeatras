@@ -1,0 +1,64 @@
+.section-1-historia{
+    background-color: #111;
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center; /* Alinea los elementos al inicio horizontalmente */
+    padding: 20px;
+    gap: 20px; /* Espacio entre la imagen y el texto */
+    border-radius: 8px; /* Bordes redondeados */
+    max-width: 100%; /* Ancho máximo de la card */
+    margin: 20px auto; /* Centra la card horizontalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para la card */
+    .contenedor-section1-historia img{
+    width: 100%; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+    }
+    .contenedor-historia1-texto{
+        max-width: 500px;
+        p{
+            font-family: $font-secundaria;
+            color: $color-oscuro;
+            text-align: justify;
+            margin: 0;
+        }
+        h2{
+            font-family: $font-principal;
+            color: $color-clarito;
+            text-align: center;
+        }
+    }
+}
+
+.contenedor-section2-historia {
+    background-color: $color-fondo2;
+    padding: 40px;
+    margin: 20px auto;
+    width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    .texto-historia{
+        padding: 20px;
+        p{
+            font-family: $font-secundaria;
+            text-align: justify;
+            color: $color-oscuro;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.img-historia {
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    grid-gap: 20px;
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+.foto-cartel img{
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,156 @@
+.header-home{
+    .header-banner{
+        img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    .contenido{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+    .titulo{
+    font-family: $font-principal;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px $color-clarito;
+    }
+    .subtitulo{
+    font-family: $font-secundaria;
+    font-weight: bold;
+    color: $color-oscuro;
+    margin-top: 10px; 
+    text-shadow: 2px 2px 4px rgb(2, 2, 2);
+    }
+    }
+}
+
+.galeria-home{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas de igual ancho */
+    grid-template-rows: auto auto; /* Dos filas que se ajustan automáticamente */
+    gap: 10px; /* Espacio entre las imágenes */
+    padding: 10px;
+    grid-template-areas: 
+        "item-1 item-1 item-2 item-2"
+        "item-3 item-3 item-2 item-2";
+}
+
+.img-home{
+    img{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+}
+.item-1 {
+    grid-area: item-1;
+}
+
+.item-2 {
+    grid-area: item-2;
+}
+
+.item-3 {
+    grid-area: item-3;
+}
+
+.section-2-home{
+    background-color: #111;
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center; /* Alinea los elementos al inicio horizontalmente */
+    padding: 20px;
+    gap: 20px; /* Espacio entre la imagen y el texto */
+    border-radius: 8px; /* Bordes redondeados */
+    max-width: 100%; /* Ancho máximo de la card */
+    margin: 20px auto; /* Centra la card horizontalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para la card */
+    .contenedor-section2-home img{
+    width: 500px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+    }
+    .contenedor-section2-texto{
+        max-width: 500px;
+        p{
+            font-family: $font-secundaria;
+            color: $color-oscuro;
+            text-align: justify;
+            margin: 0;
+        }
+        h2{
+            font-family: $font-principal;
+            color: $color-clarito;
+            text-align: center;
+        }
+    }
+}
+
+.contenedor-mapa{
+    display: flex;
+    align-items: center; /* Cambiado para alinear los elementos al principio */
+    justify-content: center;
+    padding: 20px;
+    gap: 50px;
+    max-width: 100%; /* Asegura que no se exceda el ancho de la página */
+    margin: 20px;
+}
+.mapa-home iframe{
+    width: 100%; /* Ajusta automáticamente al tamaño del contenedor */
+    height: 100%; /* Altura fija para el mapa */
+    border-radius: 8px; 
+}
+
+.horarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+    max-width: 300px; /* Limita el ancho del contenedor de información */
+    padding: 10px;
+    background: $color-clarito;
+    border-radius: 8px; /* Bordes redondeados */
+    h3{
+        font-family: $font-principal;
+    }
+    ul{
+        list-style: none;
+        padding: 0; 
+        margin: 0; 
+    }
+    li{
+        font-family: $font-secundaria;
+    }
+    .boton-home{
+    padding: 10px 20px;
+    margin-top: 20px; /* Espacio entre el botón y la lista */
+    background-color: $color-fondo2;
+    color: $color-oscuro;
+    border: none; 
+    border-radius: 5px; 
+    }
+    a{
+        font-size: 15px;
+        font-family: $font-principal;
+    }
+}
+.contenedor-redes{
+    background-color: $color-oscuro;
+    padding: 10px;
+    .redes{
+    margin: 50px;
+    text-align: center;
+    a{
+        padding: 50px;
+    }
+    img{
+        width: 35px;
+    }
+}
+}
+
